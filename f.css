@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  user-select: none;
+  background-size: cover;
+  background-image: url(images/fon.png.jpg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(20, auto);
+  padding: 0.6vh;
+  gap: 0.3vh;
+  border-radius: 0.6vh;
+  background-color: rgba(1, 8, 89); 
+}
+
+.grid>div {
+  --cell-size: min(4.5vh, 7.5vw);
+  height: var(--cell-size);
+  width: var(--cell-size);
+  border-radius: 0.3vh;
+  background-color: rgba(126, 150, 221, 0.2); 
+}
+
+a {
+  height: 90px;
+  width: 90px;
+  bottom: -45%;
+  left: -26%;
+  opacity: 0.6;
+  position: relative;
+  display: flex;
+}
+
+.grid>div.I {
+  background-color: blue;
+}
+
+.grid>div.J {
+  background-color: #4caf50;
+}
+
+.grid>div.L {
+  background-color: aqua;
+}
+
+.grid>div.O {
+  background-color: orange;
+}
+
+.grid>div.S {
+  background-color: black;
+}
+
+.grid>div.Z {
+  background-color: blueviolet;
+}
+
+.grid>div.T {
+  background-color: chartreuse;
+}
+
+.grid>div.ani {
+  background-color: #4caf50;
+}
+
+.grid>div.I, 
+.grid>div.J, 
+.grid>div.L,
+.grid>div.O,
+.grid>div.S,
+.grid>div.Z,
+.grid>div.T,
+.grid>div.ani
+{
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.2),
+  inset -2px -2px 2px rgba(1, 8, 89, 0.2)
+}
